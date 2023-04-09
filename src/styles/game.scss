@@ -2,12 +2,13 @@
     position: absolute;
     text-transform: uppercase;
     color: #7c42e1;
-    margin-bottom: 20px;
     font-size: 40px;
     letter-spacing: 3px;
-    padding: 20px;
+    padding: 20px 40px;
     border: none;
-    border-radius: 20px;
+    border-radius: 50px;
+    animation: myLogo 2s linear;
+    box-shadow: 5px 10px 10px  #000;
     &:hover{
         cursor: pointer;
         background: #abaaaa;
@@ -17,13 +18,14 @@
     }
 }
 .game{
-    background: #4e5091;
+    background: linear-gradient(#e66465, #9198e5);
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
     .result{
         display: flex;
         flex-direction: column;
@@ -32,6 +34,8 @@
         background: #fff;
         padding: 100px 150px;
         border-radius: 30px;
+        animation: myResult 2s linear;
+        box-shadow: 5px 10px 10px  #000;
         img{
             width: 200px;
         }
@@ -45,6 +49,7 @@
             font-size: 18px;
             &:hover{
                 cursor: pointer;
+                color: #ddd;
             }
             &:active{
                 color: #333;
@@ -59,6 +64,7 @@
     border-radius: 50px;
     visibility: hidden;
     transition: 1s;
+    box-shadow: 5px 10px 10px  #000;
     &.show{
         visibility: visible;
     }
@@ -67,22 +73,26 @@
         border-radius: 50px;
         div{
             height: 20px;
-            background: linear-gradient(to left, #f24949,  #7be94f, #00ff37, #00ffc3);
+            background: linear-gradient(to left, #f15d5d,  #7be94f,);
             border-radius: 50px;
         }
     }
     ul{
         padding: 10px 0;
         li{
+            text-align: center;
             list-style: none;
             font-size: 15px;
-            border: 1px solid #918e8e;
             padding: 20px;
             margin: 5px;
             border-radius: 50px;
+            border: none;
             cursor: pointer;
+            border-bottom: 1px solid #918e8e;
+            transition: 0.5s;
             &:hover{
-                background: #ddd;
+                background: #98efde;
+                transition: 0.5s;
             }
         }
     }
@@ -90,4 +100,124 @@
         margin-top: 20px;
     }
    }
+}
+
+@keyframes myLogo {
+    from{
+        top: 0;
+        opacity: 0;
+    }
+    to{
+        top: 43%;
+    }
+    
+}
+@keyframes myResult {
+    from{
+        top: 0;
+        opacity: 0;
+    }
+    to{
+    }
+    
+}
+
+
+
+@media(max-width: 898px){
+    .logo{
+        font-size: 26px;
+        letter-spacing: 2px;
+        padding: 25px 40px;
+    }
+    .game{
+        .result{
+            padding: 60px 80px;
+            img{
+                width: 150px;
+            }
+            h2{
+                font-size: 20px;
+            }
+            button{
+                margin-top: 20px;
+                padding: 12px 20px;
+                font-size: 18px;
+            }
+        }
+    
+       .block-game{
+        padding:  40px 50px; 
+        width: 500px;
+        .progress{
+            div{
+                height: 8px;
+            }
+        }
+        ul{
+            padding: 10px 0;
+            li{
+                font-size: 15px;
+                padding: 10px;
+                margin: 5px;
+            }
+        }
+        h1{
+            font-size: 17px;
+        }
+       }
+  
+    }
+   
+}
+
+
+@media(max-width: 598px){
+    .logo{
+        font-size: 16px;
+        letter-spacing: 2px;
+        padding: 15px 30px;
+    }
+    .game{
+        .result{
+            padding: 10px;
+            img{
+                width: 100px;
+            }
+            h2{
+                font-size: 15px;
+            }
+            button{
+                margin-top: 20px;
+                padding: 8px 12px;
+                font-size: 18px;
+            }
+        }
+    
+       .block-game{
+        padding:  30px;
+        width: 300px;
+        box-shadow: 5px 10px 10px  #000;
+      
+        .progress{
+            div{
+                height: 5px;
+            }
+        }
+        ul{
+            padding: 10px 0;
+            li{
+                font-size: 12px;
+                padding: 5px;
+                margin: 5px;
+               
+            }
+        }
+        h1{
+            font-size: 17px;
+        }
+       }
+  
+    }
+   
 }

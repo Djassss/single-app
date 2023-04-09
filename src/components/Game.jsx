@@ -4,52 +4,52 @@ import { Link } from 'react-router-dom';
 
 const questions = [
   {
-    title: 'React - this ...?',
+    title: 'React - this ... ?',
     variants: ['Library', 'Framework', 'Application'],
     correct: 0,
   },
   {
-    title: 'Component - this ...?',
+    title: 'Component - this ... ?',
     variants: ['Application', 'Part of the application', 'Function'],
     correct: 2,
   },
   {
-    title: 'What is JSX?',
+    title: 'What is JSX ?',
     variants: ['This is an extension of the JavaScript syntax', 'HTML, JS', 'maybe it\'s javaScipt'],
     correct: 0,
   },
   {
-    title: 'What is class?',
+    title: 'What is class ?',
     variants: ['Function', 'Component', 'In object-oriented programming,'],
     correct: 2,
   },
   {
-    title: 'What is JavaScript?',
+    title: 'What is JavaScript ?',
     variants: ['Multi -paradigm programming language', 'It is a programming language', 'Hack'],
     correct: 0,
   },
   {
-    title: 'What is Masive?',
+    title: 'What is Masive ?',
     variants: ['Massive', 'An array is a data structure that stores a set of values', 'maybe it\'s javaScipt'],
     correct: 1,
   },
   {
-    title: 'What is Object?',
+    title: 'What is Object ?',
     variants: ['Application', 'React', 'Addition in syntax'],
     correct: 2,
   },
   {
-    title: 'What is Function?',
+    title: 'What is Function ?',
     variants: ['It\'s function', 'Events', 'Function'],
     correct: 1,
   },
   {
-    title: 'What is HTML?',
+    title: 'What is HTML ?',
     variants: ['Standardized hypertext markup language for web browsing documents', 'Programing language', 'maybe it\'s javaScipt'],
     correct: 0,
   },
   {
-    title: 'What is CSS?',
+    title: 'What is CSS ?',
     variants: ['Programing language', 'Program', 'Formal language for describing the appearance of a document'],
     correct: 2,
   },
@@ -77,7 +77,7 @@ function MyGame ({ step, question, onClickVariant }) {
       let's play 
     </button>
 
-    <div className={`block-game ${myBtn ? 'show' : false}`}>
+ <div className={`block-game ${myBtn ? 'show' : false}`}>
         <div className='progress'>
           <div style={{width: `${percentage}%`}}></div>
         </div>
