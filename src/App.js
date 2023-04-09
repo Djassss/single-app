@@ -1,12 +1,17 @@
-import './styles/app.scss';
+import {  BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from 'react';
+import Main from './components/Main';
 
+import './styles/app.scss';
 
 
 const App = () => {
   return (
-    <div className="App">
-      1s
-    </div>
+    <Router>
+      <Routes>
+        <Route path='*' element={<Main />} />
+      </Routes>
+    </Router>
   );
 }
 
