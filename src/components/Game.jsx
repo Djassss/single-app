@@ -61,7 +61,7 @@ function Result ({ correct }) {
         <div className='result'>
             <img src={require('../img/game-over.png')}  />
             <h2>You have guessed {correct}  answer out of  {questions.length}</h2>
-            <a href='https://djassss.github.io/single-app/'>
+            <a href='/'>
               <button>Try again</button>
             </a>
         </div>
