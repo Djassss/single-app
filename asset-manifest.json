@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/single-app/static/css/main.800bb904.css",
-    "main.js": "/single-app/static/js/main.f7e64865.js",
+    "main.js": "/single-app/static/js/main.4cd6e207.js",
     "static/media/game-over.png": "/single-app/static/media/game-over.43b1e6bcb38cabdd8de5.png",
     "index.html": "/single-app/index.html",
     "main.800bb904.css.map": "/single-app/static/css/main.800bb904.css.map",
-    "main.f7e64865.js.map": "/single-app/static/js/main.f7e64865.js.map"
+    "main.4cd6e207.js.map": "/single-app/static/js/main.4cd6e207.js.map"
   },
   "entrypoints": [
     "static/css/main.800bb904.css",
-    "static/js/main.f7e64865.js"
+    "static/js/main.4cd6e207.js"
   ]
 }
