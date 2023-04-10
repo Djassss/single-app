@@ -61,9 +61,7 @@ function Result ({ correct }) {
         <div className='result'>
             <img src={require('../img/game-over.png')}  />
             <h2>You have guessed {correct}  answer out of  {questions.length}</h2>
-            <a href='/'>
-              <button>Try again</button>
-            </a>
+              <button onClick={() => window.location.reload()}>Try again</button>
         </div>
     )
 }
